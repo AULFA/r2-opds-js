@@ -8,7 +8,7 @@
 // https://github.com/edcarroll/ta-json
 import { JsonElementType, JsonObject, JsonProperty } from "ta-json-x";
 
-import { Properties } from "@r2-shared-js/models/metadata-properties";
+import { Properties } from "@r2-shared-rn/models/metadata-properties";
 
 import { OPDSAvailability } from "./opds2-availability";
 import { OPDSCopy } from "./opds2-copy";

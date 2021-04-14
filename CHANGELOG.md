@@ -702,8 +702,8 @@ Git diff:
 
 Changes (NPM updates):
 * `@types/node`
-* `r2-utils-js`
-* `r2-shared-js`
+* `r2-utils-rn`
+* `r2-shared-rn`
 
 Git revision info:
 * https://unpkg.com/r2-opds-js@1.0.0-alpha.2/dist/gitrev.json

@@ -5,11 +5,11 @@
 // that can be found in the LICENSE file exposed on Github (readium) in the project repository.
 // ==LICENSE-END==
 
-import { Metadata } from "@r2-shared-js/models/metadata";
-import { BelongsTo } from "@r2-shared-js/models/metadata-belongsto";
-import { Contributor } from "@r2-shared-js/models/metadata-contributor";
-import { Subject } from "@r2-shared-js/models/metadata-subject";
-import { Link } from "@r2-shared-js/models/publication-link";
+import { Metadata } from "@r2-shared-rn/models/metadata";
+import { BelongsTo } from "@r2-shared-rn/models/metadata-belongsto";
+import { Contributor } from "@r2-shared-rn/models/metadata-contributor";
+import { Subject } from "@r2-shared-rn/models/metadata-subject";
+import { Link } from "@r2-shared-rn/models/publication-link";
 
 import { OPDS } from "./opds1/opds";
 import { Entry } from "./opds1/opds-entry";

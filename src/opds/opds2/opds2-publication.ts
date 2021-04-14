@@ -8,14 +8,14 @@
 // https://github.com/edcarroll/ta-json
 import { JsonElementType, JsonObject, JsonProperty, OnDeserialized } from "ta-json-x";
 
-import { Metadata } from "@r2-shared-js/models/metadata";
-import { BelongsTo } from "@r2-shared-js/models/metadata-belongsto";
-import { Contributor } from "@r2-shared-js/models/metadata-contributor";
-import { Link } from "@r2-shared-js/models/publication-link";
+import { Metadata } from "@r2-shared-rn/models/metadata";
+import { BelongsTo } from "@r2-shared-rn/models/metadata-belongsto";
+import { Contributor } from "@r2-shared-rn/models/metadata-contributor";
+import { Link } from "@r2-shared-rn/models/publication-link";
 
 import { OPDSLink } from "./opds2-link";
 
-// import { Publication } from "@r2-shared-js/models/publication";
+// import { Publication } from "@r2-shared-rn/models/publication";
 
 const METADATA_JSON_PROP = "metadata";
 const LINKS_JSON_PROP = "links";

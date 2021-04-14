@@ -9,12 +9,12 @@ import {
     BufferConverter as JsonBufferConverter, propertyConverters as jsonConverters,
 } from "ta-json-x";
 
-import { JsonDateConverter } from "@r2-utils-js/_utils/ta-json-date-converter";
-import { JsonNumberConverter } from "@r2-utils-js/_utils/ta-json-number-converter";
+import { JsonDateConverter } from "@r2-utils-rn/_utils/ta-json-date-converter";
+import { JsonNumberConverter } from "@r2-utils-rn/_utils/ta-json-number-converter";
 import {
     BufferConverter as XmlBufferConverter, DateConverter as XmlDateConverter,
     NumberConverter as XmlNumberConverter, propertyConverters as xmlConverters,
-} from "@r2-utils-js/_utils/xml-js-mapper";
+} from "@r2-utils-rn/_utils/xml-js-mapper";
 
 // import { OPDSCollection } from "./opds2/opds2-collection";
 // import { JsonOPDSCollectionConverter } from "./opds2/opds2-collection-json-converter";
