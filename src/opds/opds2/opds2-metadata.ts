@@ -8,7 +8,7 @@
 // https://github.com/edcarroll/ta-json
 import { JsonObject, JsonProperty } from "ta-json-x";
 
-import { Metadata } from "@r2-shared-js/models/metadata";
+import { Metadata } from "@r2-shared-rn/models/metadata";
 
 // BEGIN IWithAdditionalJSON
 // [\n\s\S]+?^[ ]+@JsonProperty\(("[a-zA-Z]+")\)$

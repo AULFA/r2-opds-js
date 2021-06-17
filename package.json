@@ -1,5 +1,5 @@
 {
-  "name": "r2-opds-js",
+  "name": "r2-opds-rn",
   "version": "1.0.35",
   "description": "Readium 2 'opds' for NodeJS (TypeScript)",
   "keywords": [
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/readium/r2-opds-js.git"
+    "url": "git+https://github.com/AULFA/r2-opds-rn.git"
   },
   "author": {
     "name": "Readium Foundation",
@@ -42,14 +42,14 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/readium/r2-opds-js/issues"
+    "url": "https://github.com/AULFA/r2-opds-rn/issues"
   },
-  "homepage": "https://github.com/readium/r2-opds-js",
+  "homepage": "https://github.com/AULFA/r2-opds-rn",
   "dependencies": {
     "debug": "^4.3.1",
-    "r2-lcp-js": "^1.0.30",
-    "r2-shared-js": "^1.0.51",
-    "r2-utils-js": "^1.0.25",
+    "r2-lcp-rn": "AULFA/r2-lcp-rn-dist#develop",
+    "r2-shared-rn": "AULFA/r2-shared-rn-dist#develop",
+    "r2-utils-rn": "AULFA/r2-utils-rn-dist#develop",
     "ta-json-x": "^2.5.3",
     "tslib": "^2.2.0",
     "xmldom": "^0.6.0"
@@ -86,10 +86,10 @@
   ],
   "scripts": {
     "cson2json": "sed -E \"s/#ECMASCRIPT#/es5/g\" package-scripts-build.cson > tmp-build.cson && sed -E \"s/#ECMASCRIPT#/es6-es2015/g\" package-scripts-build.cson >> tmp-build.cson && sed -E \"s/#ECMASCRIPT#/es7-es2016/g\" package-scripts-build.cson >> tmp-build.cson && sed -E \"s/#ECMASCRIPT#/es8-es2017/g\" package-scripts-build.cson >> tmp-build.cson && json -I -f package.json -e \"this.scripts=$(cat package-scripts.cson tmp-build.cson | node node_modules/.bin/cson2json)\" && rimraf tmp-*.cson",
-    "copydist": "cpy \"./dist/**/*\" ../r2-streamer-js/node_modules/r2-opds-js/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../r2-navigator-js/node_modules/r2-opds-js/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../r2-testapp-js/node_modules/r2-opds-js/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../readium-desktop/node_modules/r2-opds-js/ --cwd=./ --parents --no-dir",
+    "copydist": "cpy \"./dist/**/*\" ../r2-streamer-js/node_modules/r2-opds-rn/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../r2-navigator-js/node_modules/r2-opds-rn/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../r2-testapp-js/node_modules/r2-opds-rn/ --cwd=./ --parents --no-dir && cpy \"./dist/**/*\" ../readium-desktop/node_modules/r2-opds-rn/ --cwd=./ --parents --no-dir",
     "quick-build-dist": "npm run transpile:typescript:es8-es2017+afterdist && npm run copydist",
     "_pregitdist": "npm run build:all",
-    "gitdist": "cd ../r2-opds-js-dist/ && git checkout -B develop && (git pull || echo \"pull\") && (git --no-pager status || echo status) && ((rimraf \"*\" && echo rimrafOK) || echo rimrafNOK) && cpy ../r2-opds-js/package.json . && cpy ../r2-opds-js/package-lock.json . && cpy ../r2-opds-js/LICENSE . && cpy ../r2-opds-js/README.md . && cpy \"./docs/**/*\" ../r2-opds-js-dist/ --cwd=../r2-opds-js/ --parents --no-dir && cpy \"./dist/**/*\" ../r2-opds-js-dist/ --cwd=../r2-opds-js/ --parents --no-dir && (git add * || echo add) && (git commit -a -m \"add new dist\" || echo commit) && (git push --set-upstream origin develop || echo push) && (git --no-pager status || echo status) && cd ../r2-opds-js",
+    "gitdist": "cd ../r2-opds-rn-dist/ && git checkout -B develop && (git pull || echo \"pull\") && (git --no-pager status || echo status) && ((rimraf \"*\" && echo rimrafOK) || echo rimrafNOK) && cpy ../r2-opds-rn/package.json . && cpy ../r2-opds-rn/package-lock.json . && cpy ../r2-opds-rn/LICENSE . && cpy ../r2-opds-rn/README.md . && cpy \"./docs/**/*\" ../r2-opds-rn-dist/ --cwd=../r2-opds-rn/ --parents --no-dir && cpy \"./dist/**/*\" ../r2-opds-rn-dist/ --cwd=../r2-opds-rn/ --parents --no-dir && (git add * || echo add) && (git commit -a -m \"add new dist\" || echo commit) && (git push --set-upstream origin develop || echo push) && (git --no-pager status || echo status) && cd ../r2-opds-rn",
     "prepare_": "npm run build:all",
     "prepublish_": "npm run prepare_",
     "typescript:imports": "node tools/typescript_relativize_path_mapping_imports.js",

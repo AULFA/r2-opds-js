@@ -40,7 +40,7 @@ export function checkNumber(t: ExecutionContext, d1: number, d2: number) {
     // t.true(d1.toString() === d2.toString());
 }
 
-// import { FunctionType } from "@r2-utils-js/_utils/xml-js-mapper";
+// import { FunctionType } from "@r2-utils-rn/_utils/xml-js-mapper";
 // tslint:disable-next-line:ban-types
 export function checkType(t: ExecutionContext, obj: any, clazz: Function) {
     t.is(typeof obj, "object"); // obj.constructor.name

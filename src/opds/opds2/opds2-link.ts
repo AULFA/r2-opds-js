@@ -8,7 +8,7 @@
 // https://github.com/edcarroll/ta-json
 import { JsonObject, JsonProperty } from "ta-json-x";
 
-import { Link } from "@r2-shared-js/models/publication-link";
+import { Link } from "@r2-shared-rn/models/publication-link";
 
 import { OPDSProperties } from "./opds2-properties";
 

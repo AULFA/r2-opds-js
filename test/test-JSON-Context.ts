@@ -1,6 +1,6 @@
 import test from "ava";
 
-import { JsonArray, TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-js/serializable";
+import { JsonArray, TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-rn/serializable";
 
 import { initGlobalConverters_GENERIC, initGlobalConverters_OPDS } from "../src/opds/init-globals";
 import { OPDSFeed } from "../src/opds/opds2/opds2";

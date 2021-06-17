@@ -1,8 +1,8 @@
 import test from "ava";
 
-import { JsonMap, TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-js/serializable";
-import { Metadata } from "@r2-shared-js/models/metadata";
-import { IStringMap } from "@r2-shared-js/models/metadata-multilang";
+import { JsonMap, TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-rn/serializable";
+import { Metadata } from "@r2-shared-rn/models/metadata";
+import { IStringMap } from "@r2-shared-rn/models/metadata-multilang";
 
 import { initGlobalConverters_GENERIC, initGlobalConverters_OPDS } from "../src/opds/init-globals";
 import { checkType_Object, checkType_String, inspect, logJSON } from "./helpers";

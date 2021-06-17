@@ -120,8 +120,8 @@ https://github.com/readium/r2-opds-js/tree/develop/src/opds/opds1
 // npm install xmldom
 import * as xmldom from "xmldom";
 
-// npm install r2-utils-js
-// "@utils" is a dist path alias, for example EcmaScript6/ES2015 'node_modules/r2-utils-js/dist/es6-es2015/src/_utils/'
+// npm install r2-utils-rn
+// "@utils" is a dist path alias, for example EcmaScript6/ES2015 'node_modules/r2-utils-rn/dist/es6-es2015/src/_utils/'
 import { XML } from "@utils/xml-js-mapper";
 
 // npm install r2-opds-js
@@ -150,7 +150,7 @@ The JSON serialization of an OPDS2 "feed" (or "publication") can be loaded/parse
 https://github.com/readium/r2-opds-js/tree/develop/src/opds/opds2
 
 ```typescript
-import { TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-js/serializable";
+import { TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-rn/serializable";
 
 // npm install r2-opds-js
 // "@opds" is a dist path alias, for example EcmaScript6/ES2015 'node_modules/r2-opds-js/dist/es6-es2015/src/opds/'
@@ -180,8 +180,8 @@ https://github.com/readium/r2-opds-js/blob/develop/src/opds/converter.ts
 // npm install xmldom
 import * as xmldom from "xmldom";
 
-// npm install r2-utils-js
-// "@utils" is a dist path alias, for example EcmaScript6/ES2015 'node_modules/r2-utils-js/dist/es6-es2015/src/_utils/'
+// npm install r2-utils-rn
+// "@utils" is a dist path alias, for example EcmaScript6/ES2015 'node_modules/r2-utils-rn/dist/es6-es2015/src/_utils/'
 import { XML } from "@utils/xml-js-mapper";
 
 // npm install r2-opds-js

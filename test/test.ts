@@ -6,10 +6,10 @@ import * as jsonDiff from "json-diff";
 import { URL } from "url";
 import * as xmldom from "xmldom";
 
-import { TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-js/serializable";
-import { Publication } from "@r2-shared-js/models/publication";
-import { sortObject, traverseJsonObjects } from "@r2-utils-js/_utils/JsonUtils";
-import { XML } from "@r2-utils-js/_utils/xml-js-mapper";
+import { TaJsonDeserialize, TaJsonSerialize } from "@r2-lcp-rn/serializable";
+import { Publication } from "@r2-shared-rn/models/publication";
+import { sortObject, traverseJsonObjects } from "@r2-utils-rn/_utils/JsonUtils";
+import { XML } from "@r2-utils-rn/_utils/xml-js-mapper";
 
 import { convertOpds1ToOpds2, convertOpds1ToOpds2_EntryToPublication, unescapeHtmlEntities } from "../src/opds/converter";
 import { initGlobalConverters_GENERIC, initGlobalConverters_OPDS } from "../src/opds/init-globals";
