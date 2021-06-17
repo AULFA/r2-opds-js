@@ -48,8 +48,8 @@
   "dependencies": {
     "debug": "^4.3.1",
     "r2-lcp-rn": "file:../r2-lcp-rn",
-    "r2-shared-rn": "file:../r2-shared-rn",
-    "r2-utils-rn": "file:../r2-utils-rn",
+    "r2-shared-rn": "AULFA/r2-shared-rn-dist#develop",
+    "r2-utils-rn": "AULFA/r2-utils-rn-dist#develop",
     "ta-json-x": "^2.5.3",
     "tslib": "^2.1.0",
     "xmldom": "^0.4.0"
